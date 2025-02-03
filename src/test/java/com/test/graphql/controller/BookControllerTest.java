@@ -3,20 +3,19 @@ package com.test.graphql.controller;
 import com.test.graphql.entity.Book;
 import com.test.graphql.service.BookService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.graphql.GraphQlTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.graphql.test.tester.GraphQlTester;
-
 import java.util.Arrays;
 import java.util.Optional;
-
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
+
 @GraphQlTest(BookController.class)
-class BookControllerTests {
+class BookControllerTest {
     @Autowired
     private GraphQlTester graphQlTester;
 
