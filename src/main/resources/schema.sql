@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS book;
+
+CREATE TABLE book (
+    id VARCHAR(255) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    publish_year INTEGER NOT NULL,
+    genre VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL
+);
